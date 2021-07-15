@@ -1,0 +1,120 @@
+.container{
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+   
+    position: relative;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+.hiUp{
+    display: flex;
+    justify-content: center;
+}
+.hiUp h2{
+   margin-top: 50px;
+    margin-bottom: 50px;
+    position:relative;
+    font-size: 4vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.3vw #383d52;
+}
+ .hiUp h2:before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    color:orange;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid orange;
+    overflow:hidden;
+    animation:animate2 3s linear infinite;
+}
+@keyframes animate2{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    }
+}
+.container .infodiv{
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+    position: relative;
+    width:260px;
+    height:500px;
+    margin-right:15px;
+    margin-bottom: 15px;
+    
+    background:#000;
+    border:3px solid transparent;
+    border-image: linear-gradient(45deg,#ff0,#f0f,#f00,#00f,#0f0);
+    border-image-slice: 1;
+    box-shadow: 0 15px 25px rgb(0,0,0,0.2);
+    transition: 0.5s;
+}
+.container:hover .infodiv{
+    filter:blur(5px);
+    transform:scale(.7);
+}
+.container .infodiv:hover{
+    filter:blur(0px);
+    transform:scale(1.05);
+    
+}
+.container .infodiv:before{
+    content:'';
+    position: absolute;
+    top: 0px;
+    left:0px;
+    
+    width:100%;
+    height:100%;
+    background: #000;
+    z-index:1;
+    transition: 0.5s;
+}
+
+
+.container .infodiv:hover:before{
+    
+    background: #000;
+    transform: scaleY(1.15);
+}
+.container .infodiv .infodiv-content{
+    text-align: center;
+    z-index:2;
+    margin-right: 0 !important;
+    padding:0 5px;
+    transition: 0.5s;
+}
+.container .infodiv:hover .infodiv-content{
+    color: #fff;
+}
+
+.container .infodiv .infodiv-content p{
+    margin-top: 35px;
+    margin-bottom: 45px;
+    font-size: 1.4em;
+    color:wheat;
+}
+.container .infodiv .infodiv-content a{
+    display:inline-block;
+    padding: 5px 10px;
+    background:transparent;
+    color:wheat;
+    text-decoration: none;
+}
+.container .infodiv:hover .infodiv-content a{
+    background: #2196f3;
+    
+}
+.btn{
+    border: 1px solid wheat;
+}

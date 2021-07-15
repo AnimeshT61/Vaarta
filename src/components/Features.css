@@ -1,0 +1,126 @@
+.features{
+    margin-top: 80px;
+    box-sizing: border-box;
+    
+}
+.hi{display: flex;
+justify-content: center;}
+.features h2{
+   
+    margin-bottom: 50px;
+    position:relative;
+    font-size: 4vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.3vw #383d52;
+}
+ .features h2:before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    color:#01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow:hidden;
+    animation:animate2 3s linear infinite;
+}
+@keyframes animate2{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    }
+}
+.skewbox{
+    position: relative;
+    top:50%;
+    left:50%;
+    margin-bottom: 50px;
+    transform: translate(-50%,0%);
+    width:1200px;
+    height:400px;
+    background:#060c21;
+    
+    display: flex;
+}
+.skewbox:before{
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:#fff;
+    z-index:-1;
+}
+.skewbox:after{
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:#fff;
+    z-index:-2;
+    filter: blur(40px);
+}
+.skewbox:before,.skewbox:after{
+    background: linear-gradient(235deg, #89ff00 , #060c21,#00bcd4);
+}
+.content{
+    width: 60%;
+    height: 100%;
+    background-color:transparent;
+    padding:5% 5%;
+    line-height: 2em;
+    font-size: 28px;
+    text-align:left ;
+}
+.imagebox{
+    width:40%;
+    height: 100%;
+   
+}
+.content1{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+    padding:5% 5%;
+    line-height: 2em;
+    font-size: 28px;
+    text-align: left;
+}
+.imagebox1{
+    width:40%;
+    height: 100%;
+    
+    
+}
+
+.content h1{
+    color: wheat;
+    text-transform: uppercase;
+}
+
+.content1 h1{
+    
+    color: wheat;
+   text-transform: uppercase;
+}
+figure video{
+    width:100%;
+    height:100%;
+  }
+  .imagebox,.imagebox1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       
+  }
+  figure{
+       margin-bottom: 0px;
+  }
+  
