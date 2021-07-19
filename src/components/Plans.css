@@ -1,0 +1,134 @@
+.Plans{
+    margin-top: 90px;
+    margin-bottom:50px;
+}
+.headingPlans{
+    display: flex;
+    justify-content: center;
+}
+.headingPlans h2{
+   margin-top: 30px;
+    margin-bottom: 15px;
+    position:relative;
+    font-size: 3.2vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.2vw #383d52;
+}
+ .headingPlans h2:before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    color:red;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 0.3px solid red;
+    overflow:hidden;
+    white-space: nowrap;
+    animation:animate2 3s linear infinite;
+}
+.Plans p{
+    margin-top: 20px;
+    color: wheat;
+    margin-bottom: 60px;
+}
+@keyframes animate2{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    }
+}
+
+.icon{
+    display:flex;
+    justify-content: center;
+  }
+  .plan-wrap{
+    
+    padding-top:30px;
+    margin-top:10px;
+  }
+  .plan-wrap .lead{
+    margin-top: 9px;
+    margin-bottom: 18px;
+    color: silver;
+  }
+  .video-plan-1{
+    border-radius: 45px;
+    
+    background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    padding:15px 10px;
+  }
+  .video-plan-2{
+    
+    border-radius: 45px;
+    background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+    padding:15px 10px;
+    
+  }
+  .details{
+    display:flex;
+    justify-content: space-between;
+  }
+  .mini-details{
+    color: orange;
+  }
+  .rounded-full{
+    border-radius: 40%;
+    background: transparent;
+    margin-right: 20px;
+  }
+  .Plansinfo{
+    display: flex;
+    justify-content: space-around;
+    padding-top:25px;
+    padding-bottom: 50px;
+    margin:50px 50px;
+    
+  }
+  .prev-price{
+    margin-right:5px;
+    text-decoration: line-through;
+    color: orange;
+  }
+  .prev-price,.new-price{
+    display:inline-table;
+  }
+  .contents{
+    display:none;
+  }
+  .active-contents{
+    display:block;
+  }
+  .active-tabs{
+    color:orange !important;
+  }
+  .help2{
+    background: #200122;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    padding: 64px 24px;
+    display:flex;
+    justify-content: space-between;
+  
+    
+  }
+  .help{
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 84px;
+  }

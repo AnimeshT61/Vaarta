@@ -9,11 +9,11 @@
     flex-wrap: wrap;
     transition: 0.5s;
 }
-.hiUp{
+.headingUp{
     display: flex;
     justify-content: center;
 }
-.hiUp h2{
+.headingUp h2{
    margin-top: 50px;
     margin-bottom: 50px;
     position:relative;
@@ -21,7 +21,7 @@
     text-transform: uppercase;
     -webkit-text-stroke: 0.3vw #383d52;
 }
- .hiUp h2:before{
+ .headingUp h2:before{
     content: attr(data-text);
     position: absolute;
     top:0;
@@ -32,6 +32,7 @@
     -webkit-text-stroke: 0vw #383d52;
     border-right: 2px solid orange;
     overflow:hidden;
+    white-space: nowrap;
     animation:animate2 3s linear infinite;
 }
 @keyframes animate2{

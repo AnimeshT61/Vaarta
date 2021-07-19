@@ -4,12 +4,13 @@ import "./Features.css"
     render() {
         return (
             <div className="features">
-                <div className="hi"><h2 data-text="Features">Features</h2></div>
+                <div className="heading"><h2 data-text="Features">Features</h2></div>
                 <div className="row skewbox">
-                    
-                    <div className="col-lg-6 col-12 content">
-                        
-                        <h1>Super easy to use with cutting edge tech stack in the backend.</h1>
+                    <div className="col-lg-6 col-12 box">
+                        <div className="content">
+                        <h3>01</h3>
+                            <h1>Super easy to use with cutting edge tech stack in the backend.</h1>
+                        </div>
                     </div>
                     <div className="col-lg-6 col-12 imagebox">
                         <figure>
@@ -21,23 +22,27 @@ import "./Features.css"
                 </div>
                 
                 <div className="row skewbox">
-                    <div className="col-lg-6 col-12 imagebox1">
+                    <div className="col-lg-6 col-12 imagebox1 order-lg-1 order-2">
                     <figure>
                             <video autoPlay="autoPlay" loop="loop" muted="muted" playsInline>
                                 <source src="https://wave.video/embed/60ec65ac46e0fb0001b73968/60ec65ac46e0fb0001b7396e.mp4" type='video/mp4'/>
                             </video>
                         </figure>
                     </div>
-                    <div className="col-lg-6 col-12 content1">
-                        <h1>Bandwidth and internet usage controls integrated.</h1>
+                    <div className="col-lg-6 col-12 box order-lg-2 order-1 ">
+                        <div className="content1 ">
+                        <h3>02</h3>
+                            <h1>Bandwidth and internet usage controls integrated.</h1>
+                        </div>
                     </div>
-                    
                 </div>
                 <div className="row skewbox">
                     
-                    
-                    <div className="col-lg-6 col-12 content">
-                        <h1>Automatic switching between parameters to provide an amazing user experience inspite of connectivity issues.</h1>
+                    <div className="col-lg-6 col-12 box">
+                        <div className=" content">
+                        <h3>03</h3>
+                            <h1>Automatic switching between parameters to provide an amazing user experience inspite of connectivity issues.</h1>
+                        </div>
                     </div>
                     <div className="col-lg-6 col-12 imagebox">
                     <figure>
@@ -48,17 +53,19 @@ import "./Features.css"
                     </div>
                 </div>
                 <div className="row skewbox">
-                    <div className="col-lg-6 col-12 imagebox1">
+                    <div className="col-lg-6 col-12 imagebox1 order-lg-1 order-2">
                     <figure>
                             <video autoPlay="autoPlay" loop="loop" muted="muted" playsInline>
                                 <source src="https://wave.video/embed/60effd7d46e0fb0001e98794/60effd7d46e0fb0001e9879a.mp4" type="video/mp4"/>
                             </video>
                     </figure>
                     </div>
-                    <div className="col-lg-6 col-12 content1">
-                        <h1>Continous improvements in the product to provide a better connectivity and experience.</h1>
+                    <div className="col-lg-6 col-12 box  order-lg-2 order-1">
+                        <div className=" content1">
+                            <h3>04</h3>
+                            <h1>Continous improvements in the product to provide a better connectivity and experience.</h1>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         )
